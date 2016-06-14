@@ -1,18 +1,36 @@
 {
-    "name": "mpociot/versionable",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "k-mit/versionable",
+                "version": "dev-master",
+                "source": {
+                    "url": "git://k-mit/versionable.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "autoload": {
+                    "psr-0" : {
+                        "k-mit\\Versionable" : "src"
+                    }
+                }
+            }
+        }
+    ],
+    "name": "k-mit/versionable",
     "license": "MIT",
     "description": "Allows to create Laravel 4 / 5 Model versioning and restoring",
     "keywords": ["model", "laravel", "ardent", "version", "history", "restore"],
     "homepage": "http://github.com/mpociot/versionable",
     "authors": [
         {
-            "name": "Marcel Pociot",
-            "email": "m.pociot@gmail.com"
+            "name": "Pontus Kindblad",
+            "email": "pontus@k-mit.se"
         }
     ],
     "support": {
-        "issues": "https://github.com/mpociot/versionable/issues",
-        "source": "https://github.com/mpociot/versionable"
+        "source": "https://github.com/k-mit/versionable"
     },
     "require": {
         "php": ">=5.3.0",
@@ -30,7 +48,7 @@
             "tests/VersionableTestCase.php"
         ],
         "psr-0": {
-            "Mpociot\\Versionable": "src/"
+            "k-mit\\Versionable": "src/"
         }
     },
     "scripts": {
