@@ -1,5 +1,5 @@
 <?php
-namespace Mpociot\Versionable;
+namespace Kmit\Versionable;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Database\Eloquent\Relations\MorphMany;

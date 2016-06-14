@@ -1,5 +1,5 @@
 <?php
-namespace Mpociot\Versionable;
+namespace Kmit\Versionable;
 
 use Illuminate\Support\Facades\Config;
 use Illuminate\Database\Eloquent\Model as Eloquent;

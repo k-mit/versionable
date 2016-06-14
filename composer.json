@@ -1,7 +1,8 @@
 {
     "repositories": [
         {
-            "type": "package",
+            "type": "vcs",
+            "url": "https://github.com/k-mit/versionable.git",
             "package": {
                 "name": "k-mit/versionable",
                 "version": "dev-master",
