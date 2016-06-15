@@ -71,6 +71,15 @@ trait VersionableTrait
      */
     public static function bootVersionableTrait()
     {
+        $allConnectedModels = config('versionhandling.connectedModels');
+        $connectedModels = [];
+        foreach ($allConnectedModels as $key => $connectedModelsArray) {
+            if (in_array(get_called_class(), $connectedModelsArray)) {
+                foreach ($connectedModelsArray as $obj_name) {
+                    array_push($connectedModels, new $obj_name);
+                }
+            }
+        }
         static::saving(function ($model) {
             $model->versionablePreSave();
         });
