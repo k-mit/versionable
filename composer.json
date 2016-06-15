@@ -5,7 +5,7 @@
             "url": "https://github.com/k-mit/versionable.git",
             "package": {
                 "name": "k-mit/versionable",
-                "version": "master",
+                "version": "dev-master",
                 "source": {
                     "url": "git://k-mit/versionable.git",
                     "type": "git",
